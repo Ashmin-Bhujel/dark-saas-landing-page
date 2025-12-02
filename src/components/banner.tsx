@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="bg-linear-(--banner-gradient) px-4 py-3">
-      <div className="container mx-auto text-center leading-6 font-medium">
+    <div className="bg-linear-(--banner-gradient)">
+      <div className="container mx-auto px-4 py-3 text-center leading-6 font-medium">
         <p>
           <span className="hidden sm:inline">
             Introducing a completely redesigned interface —{" "}

@@ -2,9 +2,9 @@
 
 :root {
   --banner-gradient:
-    to right, oklch(92.036% 0.06821 323.728 / 0.7),
-    oklch(81.656% 0.14029 218.076 / 0.7), oklch(97.094% 0.14713 108.043 / 0.7),
-    oklch(79.211% 0.12018 354.996 / 0.7), oklch(92.036% 0.06821 323.728 / 0.7);
+    to right, rgba(252, 214, 255, 0.7), rgba(41, 216, 255, 0.7),
+    rgba(255, 253, 128, 0.7), rgba(248, 154, 191, 0.7), rgba(252, 214, 255, 0.7);
+  --logo-glow-gradient: to right, #f87bff, #fb92cf, #ffdd9b, #c2f0b1, #2fd8fe;
 }
 
 @theme inline {
