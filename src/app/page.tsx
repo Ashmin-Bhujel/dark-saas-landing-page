@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Navbar />
+      <main>
+        <Navbar />
+      </main>
     </>
   );
 }

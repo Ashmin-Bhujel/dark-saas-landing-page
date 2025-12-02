@@ -2,6 +2,7 @@ import MenuIcon from "@/assets/icons/menu";
 import logoImage from "@/assets/images/logosaas.png";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./button";
 
 interface NavLink {
   href: string;
@@ -71,9 +72,8 @@ export default function Navbar() {
                 <NavLink href={navLink.href} title={navLink.title} />
               </li>
             ))}
-            <button className="cursor-pointer rounded-lg border bg-white px-4 py-2 transition-colors duration-200 hover:border-white hover:bg-black hover:text-white">
-              Get for free
-            </button>
+
+            <Button>Get for free</Button>
           </ul>
         </nav>
       </div>
