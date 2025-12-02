@@ -1,0 +1,69 @@
+import ArrowW from "@/assets/icons/arrow-w";
+import cursorImage from "@/assets/images/cursor.png";
+import messageImage from "@/assets/images/message.png";
+import Image from "next/image";
+import Link from "next/link";
+import Button from "./button";
+
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-linear-(--hero-section-gradient)">
+      {/* Gradient ellipse */}
+      <div className="absolute top-[calc(100%-96px)] left-1/2 h-[375px] w-[750px] -translate-x-1/2 rounded-[50%] border border-[#B48CDE] bg-radial-(--hero-section-ellipse-gradient) sm:top-[calc(100%-120px)] sm:h-[768px] sm:w-[1536px] lg:h-[1200px] lg:w-[2400px]"></div>
+
+      <div className="relative mx-auto flex max-w-xl flex-col items-center justify-center px-4 py-[72px] text-center text-white sm:py-24">
+        {/* Pill as a link */}
+        <Link
+          href={"/"}
+          className="group flex items-center gap-3 rounded-full border border-white/30 px-4 py-1"
+        >
+          <p className="animate-text-gradient">Version 2.0 is here</p>
+
+          <p className="flex items-center gap-0.5 transition-colors duration-200 group-hover:text-orange-300">
+            <span>Read More</span>
+            <ArrowW className="transition-transform duration-200 group-hover:translate-x-0.5" />
+          </p>
+        </Link>
+
+        {/* Hero heading */}
+        <div className="relative pt-8 text-7xl leading-[72px] font-bold tracking-tighter sm:text-9xl sm:leading-32">
+          <h1 className="inline-flex flex-col">
+            <span>One Task</span>
+            <span>at a Time</span>
+          </h1>
+
+          {/* Cursor 3D image */}
+          <Image
+            src={cursorImage}
+            alt=""
+            className="absolute top-[140px] right-[476px] hidden cursor-grab sm:block"
+            width={200}
+            height={200}
+          />
+
+          {/* Message 3D image */}
+          <Image
+            src={messageImage}
+            alt=""
+            className="absolute top-[88px] left-[498px] hidden cursor-grab sm:block"
+            width={200}
+            height={200}
+          />
+        </div>
+
+        {/* Hero text content */}
+        <div className="pt-8">
+          <p className="max-w-md text-xl leading-7">
+            Celebrate the joy of accomplishment with an app designed to track
+            your progress, motivate your efforts, and celebrate your successes.
+          </p>
+        </div>
+
+        {/* Call to action */}
+        <div className="pt-8">
+          <Button>Get for free</Button>
+        </div>
+      </div>
+    </section>
+  );
+}

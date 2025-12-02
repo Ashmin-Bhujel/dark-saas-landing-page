@@ -5,6 +5,8 @@
     to right, rgba(252, 214, 255, 0.7), rgba(41, 216, 255, 0.7),
     rgba(255, 253, 128, 0.7), rgba(248, 154, 191, 0.7), rgba(252, 214, 255, 0.7);
   --logo-glow-gradient: to right, #f87bff, #fb92cf, #ffdd9b, #c2f0b1, #2fd8fe;
+  --hero-section-ellipse-gradient: closest-side, #000000, #000000 82%, #9560eb;
+  --hero-section-gradient: to bottom, #000000, #200d42, #4f21a1, #a46edb;
 }
 
 @theme inline {
@@ -13,4 +15,34 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+}
+
+.animate-text-gradient {
+  background: linear-gradient(
+    to right,
+    #f87bff,
+    #fb92cf,
+    #ffdd9b,
+    #c2f0b1,
+    #2fd8fe,
+    #c2f0b1,
+    #ffdd9b,
+    #fb92cf,
+    #f87bff
+  );
+  background-size: 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: text-gradient-animation 3s linear infinite;
+}
+
+@keyframes text-gradient-animation {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 200%;
+  }
 }
