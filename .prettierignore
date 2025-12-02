@@ -1,0 +1,4 @@
+/node_modules
+/starter-kit
+pnpm-workspace.yaml
+pnpm-lock.yaml
