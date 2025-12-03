@@ -1,3 +1,5 @@
+import "lenis/dist/lenis.css";
+import ReactLenis from "lenis/react";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
@@ -19,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} antialiased`}>{children}</body>
+      <body className={`${dmSans.variable} antialiased`}>
+        <ReactLenis root options={{ lerp: 0.15 }} />
+        {children}
+      </body>
     </html>
   );
 }
