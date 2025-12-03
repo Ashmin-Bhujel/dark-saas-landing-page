@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} antialiased`}>
-        <ReactLenis root options={{ lerp: 0.15 }} />
+        <ReactLenis root />
         {children}
       </body>
     </html>
