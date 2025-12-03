@@ -45,11 +45,14 @@ function NavLink({ href, title }: NavLink) {
 
 export default function Navbar() {
   return (
-    <header className="bg-black">
-      <div className="container mx-auto flex items-center justify-between p-4">
+    <header className="bg-black p-4">
+      <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="relative">
+          {/* Logo glow gradient */}
           <div className="absolute inset-0 bg-linear-(--logo-glow-gradient) blur-sm"></div>
+
+          {/* Logo image */}
           <Link href={"/"}>
             <Image
               src={logoImage}
@@ -72,8 +75,9 @@ export default function Navbar() {
                 <NavLink href={navLink.href} title={navLink.title} />
               </li>
             ))}
-
-            <Button>Get for free</Button>
+            <li>
+              <Button>Get for free</Button>
+            </li>
           </ul>
         </nav>
       </div>
