@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-linear-(--hero-section-gradient)">
       {/* Gradient ellipse */}
-      <div className="absolute top-[calc(100%-96px)] left-1/2 h-[375px] w-[750px] -translate-x-1/2 rounded-[50%] border border-[#B48CDE] bg-radial-(--hero-section-ellipse-gradient) sm:top-[calc(100%-120px)] sm:h-[768px] sm:w-[1536px] lg:h-[1200px] lg:w-[2400px]"></div>
+      <div className="absolute top-[calc(100%-96px)] left-1/2 h-[375px] w-[750px] -translate-x-1/2 rounded-[50%] border border-[#B48CDE] bg-radial-(--hero-section-ellipse-gradient) sm:top-[calc(100%-120px)] sm:h-[768px] sm:w-[1536px] lg:h-[1200px] lg:w-[2400px] xl:w-[3600px] 2xl:w-[4800px]"></div>
 
       <div className="relative mx-auto flex max-w-xl flex-col items-center justify-center px-4 py-[72px] text-center text-white sm:py-24">
         {/* Pill as a link */}

@@ -34,15 +34,15 @@ body {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: text-gradient-animation 3s linear infinite;
+  animation: text-gradient-animation 2.5s linear infinite;
 }
 
 @keyframes text-gradient-animation {
   from {
-    background-position: 0%;
+    background-position: 200%;
   }
 
   to {
-    background-position: 200%;
+    background-position: 0%;
   }
 }
