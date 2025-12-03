@@ -7,6 +7,8 @@
   --logo-glow-gradient: to right, #f87bff, #fb92cf, #ffdd9b, #c2f0b1, #2fd8fe;
   --hero-section-ellipse-gradient: closest-side, #000000, #000000 82%, #9560eb;
   --hero-section-gradient: to bottom, #000000, #200d42, #4f21a1, #a46edb;
+  --product-showcase-gradient: to bottom, #000000, #5d2ca8;
+  --faq-section-gradient: to top, #000000, #5d2ca8;
 }
 
 @theme inline {
