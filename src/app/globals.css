@@ -8,7 +8,7 @@
   --hero-section-ellipse-gradient: closest-side, #000000, #000000 82%, #9560eb;
   --hero-section-gradient: to bottom, #000000, #200d42, #4f21a1, #a46edb;
   --product-showcase-gradient: to bottom, #000000, #5d2ca8;
-  --faq-section-gradient: to top, #000000, #5d2ca8;
+  --faqs-section-gradient: to top, #000000, #5d2ca8;
 }
 
 @theme inline {
