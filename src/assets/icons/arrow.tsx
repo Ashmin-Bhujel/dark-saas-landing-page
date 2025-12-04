@@ -1,4 +1,4 @@
-const ArrowW = (props: React.SVGProps<SVGSVGElement>) => {
+const Arrow = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width={17}
@@ -16,4 +16,4 @@ const ArrowW = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default ArrowW;
+export default Arrow;

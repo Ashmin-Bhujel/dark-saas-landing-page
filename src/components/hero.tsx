@@ -1,4 +1,4 @@
-import ArrowW from "@/assets/icons/arrow-w";
+import Arrow from "@/assets/icons/arrow";
 import cursorImage from "@/assets/images/cursor.png";
 import messageImage from "@/assets/images/message.png";
 import Image from "next/image";
@@ -21,7 +21,7 @@ export default function Hero() {
 
           <p className="flex items-center gap-0.5 transition-colors duration-200 group-hover:text-orange-300">
             <span>Read More</span>
-            <ArrowW className="transition-transform duration-200 group-hover:translate-x-0.5" />
+            <Arrow className="transition-transform duration-200 group-hover:translate-x-0.5" />
           </p>
         </Link>
 
