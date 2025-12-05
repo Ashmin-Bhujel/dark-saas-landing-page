@@ -13,7 +13,7 @@ export default function AccordionItem({ question, answer }: AccordianItem) {
   }
 
   return (
-    <div className="flex flex-col border-b border-white/30 py-7 sm:min-w-2xl">
+    <div className="flex flex-col border-b border-white/30 py-7 sm:min-w-xl md:min-w-2xl">
       {/* Question */}
       <button
         className="group flex cursor-pointer items-center justify-between text-left"
