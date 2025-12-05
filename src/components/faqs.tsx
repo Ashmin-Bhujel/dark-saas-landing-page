@@ -34,7 +34,7 @@ export default function FAQs() {
       <div className="container mx-auto flex flex-col items-center justify-center">
         <div className="flex max-w-2xl flex-col gap-5">
           {/* FAQs heading */}
-          <h2 className="text-center text-5xl leading-12 font-bold">
+          <h2 className="text-center text-5xl leading-12 font-bold tracking-tighter">
             Frequently asked questions
           </h2>
 

@@ -19,9 +19,9 @@ export default function LogoTicker() {
   return (
     <section className="bg-black text-center text-white">
       <div className="container mx-auto px-4 py-[72px] sm:py-24">
-        <h2 className="text-xl text-white/70">
+        <p className="text-xl text-white/70">
           Trusted by the world&apos;s most innovative teams
-        </h2>
+        </p>
 
         {/* Logos */}
         <div className="flex justify-center pt-9">
