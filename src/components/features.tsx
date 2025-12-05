@@ -46,7 +46,7 @@ export default function Features() {
       <div className="container mx-auto flex flex-col items-center justify-center text-center">
         {/* Features content */}
         <div className="flex max-w-xl flex-col gap-5">
-          <h2 className="text-5xl leading-12 font-bold tracking-tighter">
+          <h2 className="text-center text-5xl leading-12 font-bold tracking-tighter sm:text-6xl">
             Everything you need
           </h2>
           <p className="text-xl leading-7 text-white/70">
