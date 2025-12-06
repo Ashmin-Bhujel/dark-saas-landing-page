@@ -1,6 +1,8 @@
+"use client";
 import Arrow from "@/assets/icons/arrow";
 import cursorImage from "@/assets/images/cursor.png";
 import messageImage from "@/assets/images/message.png";
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./button";
@@ -33,22 +35,36 @@ export default function Hero() {
           </h1>
 
           {/* Cursor 3D image */}
-          <Image
-            src={cursorImage}
-            alt=""
-            className="absolute top-[140px] right-[476px] hidden cursor-grab sm:block"
-            width={200}
-            height={200}
-          />
+          <motion.div
+            drag={true}
+            dragSnapToOrigin={true}
+            className="absolute top-[140px] right-[476px] hidden cursor-move sm:block"
+          >
+            <Image
+              src={cursorImage}
+              alt=""
+              width={200}
+              height={200}
+              draggable={false}
+              className="max-w-none"
+            />
+          </motion.div>
 
           {/* Message 3D image */}
-          <Image
-            src={messageImage}
-            alt=""
-            className="absolute top-[88px] left-[498px] hidden cursor-grab sm:block"
-            width={200}
-            height={200}
-          />
+          <motion.div
+            drag={true}
+            dragSnapToOrigin={true}
+            className="absolute top-[88px] left-[498px] hidden cursor-move sm:block"
+          >
+            <Image
+              src={messageImage}
+              alt=""
+              width={200}
+              height={200}
+              draggable={false}
+              className="max-w-none"
+            />
+          </motion.div>
         </div>
 
         {/* Hero text content */}
